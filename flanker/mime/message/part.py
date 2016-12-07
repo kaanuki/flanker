@@ -646,7 +646,7 @@ def choose_text_encoding(charset, preferred_encoding, body):
         else:
             return preferred_encoding
     else:
-        return stronger_encoding(preferred_encoding, 'base64')
+        return stronger_encoding(preferred_encoding, 'quoted-printable')
 
 
 def stronger_encoding(a, b):
